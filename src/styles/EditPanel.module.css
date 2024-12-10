@@ -1,0 +1,20 @@
+.beforefadein {
+  opacity: 0;
+  transition: opacity 0.3s;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.fadeout {
+  opacity: 0;
+  transition: opacity 0.3s;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.fadein {
+  opacity: 1;
+  transition: opacity 0.3s;
+  transform: translateY(0px);
+  transition: all 0.3s ease-in-out;
+}

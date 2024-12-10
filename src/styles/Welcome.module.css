@@ -1,0 +1,99 @@
+.subtext {
+  color: var(--inverted-color);
+  opacity: 80%;
+}
+
+.button.fade {
+  background-color: #00000000;
+  filter: blur(10px);
+}
+
+.button.active {
+  background-color: var(--bg-inverted-translucid);
+  filter: blur(0px);
+}
+
+.button {
+  transition: all 0.7s ease;
+  padding: 8px 16px;
+  border-radius: 12px;
+  background-color: var(--bg-inverted-translucid);
+}
+
+.button:hover {
+  background-color: var(--bg-inverted-hover);
+}
+
+.arrow {
+  color: var(--inverted-color);
+  opacity: 100% !important;
+  rotate: 180deg;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes rotate-ellipse {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(100px)
+      translateY(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(100px)
+      translateY(0);
+  }
+}
+
+.circle:nth-of-type(1) {
+  animation: rotate 12s linear infinite;
+  animation-delay: 2s;
+}
+
+.circle:nth-child(2) {
+  animation: rotate-ellipse 12s linear infinite;
+  animation-delay: -24s;
+}
+
+.circle:nth-child(3) {
+  animation: rotate 12s linear infinite;
+  animation-delay: -12s;
+}
+
+.circle:nth-child(4) {
+  animation: rotate-ellipse 12s linear infinite;
+  animation-delay: -16s;
+}
+
+.circle:nth-child(5) {
+  animation: rotate 12s linear infinite;
+  animation-delay: -20s;
+}
+
+.modalfadeout {
+  opacity: 0;
+  transform: translateX(-10px);
+  border: none;
+}
+
+.modalfadein {
+  opacity: 0;
+  transform: translateX(10px);
+}
+
+.modalclose {
+  transition: all 0.2s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  border: none;
+}
+
+.overlayclose {
+  transition: all 0.2s ease;
+  opacity: 0;
+}

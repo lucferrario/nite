@@ -1,0 +1,19 @@
+.modal {
+  opacity: 100;
+  transition: all 0.2s ease;
+}
+
+.overlay {
+  opacity: 30;
+  transition: all 0.2s ease;
+}
+
+.modalclose {
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+.overlayclose {
+  transition: all 0.2s ease;
+  opacity: 0;
+}

@@ -1,0 +1,70 @@
+.splashcontainer {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 100;
+  transition: all 1s ease;
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+
+.splashcontaineropacity {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 100;
+  transition: all 1s ease;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  opacity: 0;
+}
+
+.splashcontainerhidden {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 100;
+  transition: all 1s ease;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  display: none;
+}
+
+.logop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+.logo {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.logo.active {
+  opacity: 1;
+  bottom: 0;
+  transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}

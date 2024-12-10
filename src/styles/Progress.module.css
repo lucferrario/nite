@@ -1,0 +1,46 @@
+#outer {
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.2),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+#inner {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.dark #outer {
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.2),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.1);
+}
+
+.dark #inner {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.5),
+    inset -4px -4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.circle {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  fill: none;
+  stroke: url(#gradient);
+  stroke-width: 20px;
+  animation: anim 1s ease-in-out;
+}
+
+.svg {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim {
+  0% {
+    stroke-dashoffset: 378;
+  }
+  20% {
+    stroke-dashoffset: 378;
+  }
+}

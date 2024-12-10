@@ -1,0 +1,32 @@
+.svgpiwrapper {
+  position: relative;
+}
+
+.svgpi {
+  transform: rotate(-90deg); /* Fix the orientation */
+}
+
+.svgpilabel {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dark .svgpitrack {
+  stroke: #515151;
+}
+
+.svgpiindicator {
+  animation: animate 1s ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    stroke-dashoffset: 250%;
+  }
+  20% {
+    stroke-dashoffset: 250%;
+  }
+}

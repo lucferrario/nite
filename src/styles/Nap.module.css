@@ -1,0 +1,12 @@
+.nap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+@media (min-width: 640px) {
+  .nap {
+    grid-template-columns: 4fr 3fr 10fr;
+    grid-template-rows: 1fr;
+  }
+}
